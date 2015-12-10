@@ -14,7 +14,7 @@ function fetchAnimalsDone(data){
 }
 
 export default {
-  fetchAnimals: function(){
+  fetchWall: function(){
     dispatch(fetchAnimalsStart());
     return (dispatch) => fetch('http://localhost:3020/posts')
             .then((response) => response.json())
