@@ -1,5 +1,5 @@
 import { createConstants } from '../utils';
 
 export default createConstants(
-  'COUNTER_INCREMENT', 'FETCH_TEST', 'FETCH_RESULT'
+  'FETCH_ANIMALS_START', 'FETCH_ANIMALS_DONE', 'FETCH_ANIMALS'
 );

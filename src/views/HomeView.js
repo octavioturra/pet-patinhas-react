@@ -15,6 +15,7 @@ const mapStateToProps = (state) => ({
 export class HomeView extends React.Component {
   static propTypes = {
     increment : React.PropTypes.func,
+    fetchTest : React.PropTypes.func,
     counter   : React.PropTypes.number
   }
 
@@ -30,6 +31,8 @@ export class HomeView extends React.Component {
                 onClick={this.props.increment}>
           Increment
         </button>
+        <button className='btn btn-default'
+                onClick={this.props.fetchTest}>REST Test</button>
         <hr />
         <Link to='/about'>Go To About View</Link>
       </div>

@@ -4,6 +4,7 @@ import { Router }               from 'react-router';
 import routes                   from '../routes';
 import DevTools                 from './DevTools';
 import { createDevToolsWindow } from '../utils';
+import Header                   from '../components/header';
 
 export default class Root extends React.Component {
   static propTypes = {
@@ -31,6 +32,7 @@ export default class Root extends React.Component {
     return (
       <Provider store={this.props.store}>
         <div>
+          <Header></Header>
           <Router history={this.props.history}>
             {routes}
           </Router>
